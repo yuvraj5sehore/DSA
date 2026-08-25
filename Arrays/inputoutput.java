@@ -1,5 +1,5 @@
 import java.util.*;
-
+// A built-in package containing pre-written utility tools.
 
 public class inputoutput{
     public static void main(String args[]){
