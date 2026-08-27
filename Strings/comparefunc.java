@@ -12,8 +12,11 @@ class comparefunc {
             System.out.println("strings are not equal");
         }
 
-        if(s1.equals(s3)) //.equals will check each letter of the string not who is pointing to the same string in the memory
-        System.out.println("strings are equal");
+        if(s1.equals(s3)) 
+        //.equals will check each letter of the string not who is pointing to the same string in the memory
+        //.equals will check the values for checking values we need to use .equals() method 
+        // it compares if they are logically equals or not 
+         System.out.println("strings are equal");
 
 
     }
