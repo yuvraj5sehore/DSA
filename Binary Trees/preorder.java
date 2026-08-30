@@ -1,6 +1,8 @@
-//build tree preorder code 
+// preorder traversal code 
 
-class BinaryTreeB {
+//O(n) time linear time complexity bcz we are going on each node exactly one time 
+
+class preorder {
     static class Node {
         int data;
         Node left;
@@ -26,12 +28,18 @@ class BinaryTreeB {
 
               return newNode;
            }
+           public static void preorder(Node root){
+            if (root == null) return ;
+            System.out.print(root.data+" ");
+            preorder(root.left);
+            preorder(root.right);
+           }
     }
     public static void main(String[] args) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree tree = new BinaryTree();
 
         Node root = tree.buildTree(nodes);
-        System.out.println(root.data);
+        tree.preorder(root);
     }
 }
