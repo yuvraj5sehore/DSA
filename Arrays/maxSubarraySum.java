@@ -24,7 +24,7 @@ public class maxSubarraySum{
         }
          System.out.println("max sum ="+ms); */
          // prefix sum approach
-         int cs = 0;
+         /*int cs = 0;
          int ms = Integer.MIN_VALUE;
 
          int prefix[] = new int [numbers.length];
@@ -45,7 +45,10 @@ public class maxSubarraySum{
             }
          }
 
-        System.out.println("max sum = "+ms); 
+        System.out.println("max sum = "+ms); */
+
+        
+
     }
     public static void main(String args[]){  
        int numbers[] = {1,-2,6,-1,3};          
