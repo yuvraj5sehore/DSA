@@ -6,6 +6,7 @@ class factofn {
         if(n==1){
            return 1;
         }
+
         return n * printFact(n-1);
     }
     public static void main(String[] args) {
