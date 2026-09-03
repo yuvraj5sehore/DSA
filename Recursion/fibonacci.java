@@ -17,3 +17,7 @@ class fibonacci {
       System.out.println(fib(n));
     }
 }
+
+
+//time complexity will be more bigger bcz our program is running exponentially
+
