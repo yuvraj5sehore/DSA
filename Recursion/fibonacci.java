@@ -12,7 +12,7 @@ class fibonacci {
         return fibn;
     }
     public static void main(String[] args) {
-       int n = 5;
+       int n = 50;
 
       System.out.println(fib(n));
     }
