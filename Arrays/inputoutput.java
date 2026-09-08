@@ -17,10 +17,12 @@ public class inputoutput{
         arr[1] = sc.nextInt();
         arr[2] = sc.nextInt();
 
-
+        
         for(int i = 0;i<arr.length;i++){
             System.out.print(arr[i]+" ");  //  remove ln to  get the print value at the same line 
         }
+        
+
 
     }
 }
