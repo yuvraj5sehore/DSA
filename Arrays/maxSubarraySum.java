@@ -4,25 +4,25 @@
 public class maxSubarraySum{  
     public static void maxSubarraySum(int numbers[]){
         // bruteforce approach 
-      /*  int cs = 0;
-        int ms = Integer.MIN_VALUE;
+        int currentSum = 0;
+        int maximumSum = Integer.MIN_VALUE;
         for(int i = 0; i<numbers.length; i++){
             int start = i;
             for(int j = i; j<numbers.length; j++){
                 int end = j;
-                cs = 0;
+                currentSum = 0;
                 for(int k = start; k<=end; k++){
-                   cs += numbers[k];
+                   currentSum += numbers[k];
                 }
-                System.out.println(cs);
-                if(ms<cs){
-                    ms = cs;
+                System.out.println(currentSum);
+                if(maximumSum<currentSum){
+                    maximumSum = currentSum;
                 }
               
             }
            
         }
-         System.out.println("max sum ="+ms); */
+         System.out.println("max sum ="+maximumSum);
          // prefix sum approach
          /*int cs = 0;
          int ms = Integer.MIN_VALUE;
