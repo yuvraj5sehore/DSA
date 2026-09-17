@@ -1,6 +1,6 @@
 
 
-//calculate the power of b^a
+//calculate b^a
 class bpowera {
     public static void main(String[] args) {
         int a = 5;

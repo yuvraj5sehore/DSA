@@ -1,5 +1,5 @@
 
-//how to make an dynamic array in java 
+//how to remove an element in dynamic array in java 
 import java.util.*;
 
 class dynamicArray {
