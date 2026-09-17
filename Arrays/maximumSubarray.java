@@ -3,8 +3,8 @@ class maximumSubarray {
 
     public static void maxSubarraySum(int numbers[]){
         // prefix sum approach
-         int cs = 0;
-         int ms = Integer.MIN_VALUE;
+         int currSum = 0;
+         int maxSum = Integer.MIN_VALUE;
 
          int prefix[] = new int [numbers.length];
 
@@ -14,21 +14,21 @@ class maximumSubarray {
             prefix[i] = prefix[i-1] + numbers[i];
          }
          for(int i = 0;i<numbers.length;i++){
-            for(int j = 0;j<numbers.length;j++){
+            int start = i;
+            for(int j = i;j<numbers.length;j++){
+              int end = j;
 
-             if(i == 0){
-               cs = prefix[j];
-             }else{
-               cs = prefix[j] - prefix[i-1];
-             }
+              currSum = start==0 ? prefix[end]:prefix[end] - prefix[start-1];
 
-             if(ms<cs){
-                ms = cs;
-             }
              
+
+             if(maxSum<currSum){
+                maxSum = currSum;
+             }
+              System.out.println(currSum);
             }
          }
-        System.out.println("max sum = "+ms);         
+        System.out.println("max sum = "+maxSum);         
     }
     public static void main(String[] args) {
         int numbers[] = {1,-2,6,-1,3};          
