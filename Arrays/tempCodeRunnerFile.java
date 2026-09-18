@@ -1,0 +1,1 @@
+How to printSubarrays of an array 
